@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100wh;
+}
+
+.kor{
+    border: 1px solid black;
+    flex: 0 0 30%;
+    max-width: 100px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.jatekter{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 400px;
+    
+}
+
+.jatekter div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green{
+    background-color: greenyellow;
+}
+
+.orange{
+    background-color: orange;
+}
