@@ -1,5 +1,4 @@
 import Jatekter from "./Jatekter.js";
 
-
-let tartElem = document.querySelector(".jatekter")
-const JATEK = new Jatekter(tartElem)
+let elem = document.getElementsByClassName("lampak")[0];
+new Jatekter(elem)

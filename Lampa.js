@@ -14,11 +14,11 @@ export default class Lampa{
     megjelenit(){
         let html = ""
         if (this.#allapot) {
-            html = `<div class="kor green">
+            html = `<div class="lampa zold">
                     </div>`;
                         
         }else{
-             html = `<div class="kor orange">
+             html = `<div class="lampa sarga">
                     </div>`;
         }
         this.szuloelem.insertAdjacentHTML("beforeend",html);
@@ -26,7 +26,7 @@ export default class Lampa{
     }
 
     esemeny(){
-        this.elem = document.querySelector(".kor:last-child");
+        this.elem = document.querySelector(".lampa:last-child");
         this.elem.addEventListener("click",(event)=>{
             console.log(this.#index)
 
