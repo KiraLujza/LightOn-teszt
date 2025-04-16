@@ -27,7 +27,7 @@ export default class Jatekter{
         let gomb = document.querySelector(".gomb");
         gomb.addEventListener("click", (event)=>{
             console.log(event)
-            this.visszaall();
+            //this.visszaall();
             this.megjelenit()
         });
     }   
@@ -119,6 +119,10 @@ export default class Jatekter{
             }, 500);
 
         }
+    }
+
+    getLista(){
+        return this.#allapotok;
     }
 }
 

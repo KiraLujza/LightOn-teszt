@@ -5,9 +5,12 @@ export default class Lampa{
         this.#allapot=allapot;
         this.#index = index;
         this.szuloelem = szuloelem
-
+console.log(this.#index)
         this.megjelenit();
-        this.esemeny();
+        if (this.#index<9) {
+
+           // this.esemeny();
+        }
 
     }
 
@@ -27,6 +30,7 @@ export default class Lampa{
 
     esemeny(){
         this.elem = document.querySelector(".lampa:last-child");
+        console.log(this.elem)
         this.elem.addEventListener("click",(event)=>{
             console.log(this.#index)
 
